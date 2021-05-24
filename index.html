@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginação</title>
+</head>
+<style>
+  .pagina {
+    display: inline-block;
+  }
+
+  .pagina a {
+    color: rgb(58, 47, 107);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+
+  .pagina a:hover:not(.active) {background-color: #614cafd3;}
+
+  .pagina a.active {
+    background-color: #614caf;
+    color: rgb(236, 139, 255);
+  }
+
+  h2 {
+    color: rgb(66, 2, 66);
+    text-shadow: -1px 0 rgb(65, 0, 82), 0 1px rgb(63, 0, 63), 0 -1px rgb(55, 0, 80);
+  }
+
+</style>
+</head>
+<body>
+
+<h2>Paginação - aula do dia 18/05/2021</h2>
+
+<div class="pagina">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+</div>
+
+<h2>Quando a Página for ativa</h2>
+
+<div class="pagina">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#"class= "active">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+</div>
+
+</body>
+</html>
